@@ -94,10 +94,10 @@ public class MainActivity extends DaggerAppCompatActivity implements RecipeItemC
                 if (apiResponse.getResponse() != null) {
                     adapter.addRecipes(apiResponse.getResponse());
                 } else {
-                    Toast.makeText(this, "No recipes", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.recipie_not_found_message, Toast.LENGTH_SHORT).show();
                 }
             } else {
-                Toast.makeText(this, "Internet Connectivity", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.no_internet_error, Toast.LENGTH_SHORT).show();
             }
         });
     }
