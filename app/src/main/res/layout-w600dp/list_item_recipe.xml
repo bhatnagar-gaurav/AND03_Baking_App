@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_recipe"
+    android:foreground="@drawable/ripple_recipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="@dimen/margin_4"
+    app:cardCornerRadius="@dimen/margin_4"
+    app:cardElevation="2dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imv_cake"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="@dimen/recipe_img_width"
+            android:padding="@dimen/margin_32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cake"
+            tools:srcCompat="@drawable/ic_cake" />
+
+        <TextView
+            android:id="@+id/txv_recipe"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_16"
+            android:textAlignment="center"
+            android:textSize="@dimen/txt_18"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imv_cake"
+            tools:text="Nutella Pie" />
+
+        <ImageView
+            android:id="@+id/imv_serving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_4"
+            app:layout_constraintBottom_toBottomOf="@+id/txv_serving"
+            app:layout_constraintEnd_toStartOf="@+id/txv_serving"
+            app:layout_constraintTop_toTopOf="@+id/txv_serving"
+            app:srcCompat="@drawable/ic_servings" />
+
+        <TextView
+            android:id="@+id/txv_serving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BakingAppUdacity</string>
+    <string name="txt_fragment_select_step">Select Step</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_step"
+    tools:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.github.vipulasri.timelineview.TimelineView
+        android:id="@+id/timelineView"
+        android:layout_width="@dimen/timeline_view_width"
+        android:layout_height="@dimen/size_0dp"
+        app:line="@color/white"
+        app:marker="@drawable/ic_timeline_marker"
+        app:lineSize="@dimen/size_2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txv_step_description"
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_8"
+        android:paddingTop="@dimen/margin_16"
+        android:paddingEnd="@dimen/margin_8"
+        android:paddingBottom="@dimen/margin_16"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_16"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/timelineView"
+        tools:text="Recipe Introduction" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_0dp">0dp</dimen>
+    <dimen name="size_1dp">1dp</dimen>
+    <dimen name="size_2dp">2dp</dimen>
+
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="widget_list_row_text">16sp</dimen>
+    <dimen name="widget_title_text">18sp</dimen>
+
+    <dimen name="txt_16">16sp</dimen>
+    <dimen name="txt_18">18sp</dimen>
+    <dimen name="txt_22">22sp</dimen>
+
+    <dimen name="timeline_view_width">48dp</dimen>
+    <dimen name="recipe_img_width">150dp</dimen>
+    <dimen name="player_view_height">200dp</dimen>
+
+</resources>
